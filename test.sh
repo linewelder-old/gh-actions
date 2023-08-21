@@ -18,10 +18,10 @@ function tst() {
     echo "  Expected output: $3"
     echo "  Output: $RESULT"
 
-    FAILED=$((FAILED + 1))
+    FAILED=$(($FAILED + 1))
 }
 
 tst "2 + 3" "2 3" "5"
 tst "5 - 1" "5 -1" "4"
 
-[[ $FAILED != 0 ]] && exit 1
+[[ $FAILED = 0 ]] || exit 1
