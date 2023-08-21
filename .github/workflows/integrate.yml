@@ -3,7 +3,7 @@ name: My Epic Test
 on:
   push:
     branches: [ main ]
-  pull_requst:
+  pull_request:
     branches: [ main ]
 
 jobs:
