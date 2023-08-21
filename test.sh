@@ -23,5 +23,6 @@ function tst() {
 
 tst "2 + 3" "2 3" "5"
 tst "5 - 1" "5 -1" "4"
+tst "Argument missing" "4" "Error"
 
 [[ $FAILED = 0 ]] || exit 1
