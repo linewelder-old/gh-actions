@@ -1,0 +1,14 @@
+name: My Epic Test
+
+on:
+  push:
+    branches: [ main ]
+  pull_requst:
+    branches: [ main ]
+
+jobs:
+  run_tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: make test
