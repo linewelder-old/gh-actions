@@ -6,6 +6,9 @@ CXX := g++
 
 all: $(BUILD_DIR)/$(TARGET_EXEC)
 
+test: all
+	./test.sh
+
 run: all
 	$(BUILD_DIR)/$(TARGET_EXEC)
 
